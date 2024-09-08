@@ -1,0 +1,307 @@
+/* reset preflight */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif; /*Silahkan ubah tipe font di samping sesuai keingginan */
+  text-decoration: none;
+  color: rgb(245, 245, 248); 
+  background: url(img/dark\ line-01.jpg) no-repeat center center fixed;
+  background-size: cover;
+}
+
+body {
+ background-color: rgb(0, 0, 0);
+}
+
+.card{
+ background-color: rgb(13, 0, 255);
+}
+
+p {
+  color: rgb(255, 255, 255); /*Silahkan ubah warna text dengan cara mengubah kode warna yg ada di samping*/
+}
+
+.container {
+  margin: 0 auto;
+  padding: 3rem 1rem 5rem;
+}
+
+/* Header */
+header {
+  max-width: 768px;
+}
+
+header figure {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+
+header figure img {
+  width: 7rem;
+   border-radius: 50px; /*ini untuk ubah bentuk */
+  border: solid 1px rgb(0, 4, 255);
+  padding: 0.25rem;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  -ms-border-radius: 50px;
+  -o-border-radius: 50px;
+}
+.logo
+img {
+  width: 50px;   /* Mengatur lebar gambar menjadi 300px */
+  height: auto;   /* Mengatur tinggi gambar secara otomatis agar proporsional */
+}
+
+.img-left, .img-right {
+  width: 200px;  /* Mengatur lebar kedua gambar */
+  height: auto;  /* Menyesuaikan tinggi secara proporsional */
+  margin: 10px;  /* Memberi jarak antara gambar */
+}
+
+
+header figure figcaption span:last-child {
+  color: rgb(212 212 216);
+  font-family: monospace;
+}
+
+header section {
+  margin-top: 2rem;
+}
+
+header section h1 {
+  font-weight: 500;
+  margin-bottom: .5rem;
+  scroll-margin-top: 2rem;
+}
+
+header section p {
+  text-align: justify;
+}
+
+/* profil box */
+.profile-box {
+  position: fixed;      /* Membuat elemen tetap di posisi saat di-scroll */
+  top: 0;               /* Menyusun elemen di bagian atas halaman */
+  left: 0;              /* Meletakkan elemen di sisi kiri halaman */
+  width: 100%;          /* Membuat elemen selebar halaman */
+  background-color: #2200ff; /* Latar belakang putih */
+  border-bottom: 1px solid #ccc; /* Garis bawah untuk membedakan dari konten */
+  padding: 10px 20px;   /* Jarak di dalam elemen */
+  box-shadow: 0 2px 4px rgb(255, 255, 255); /* Memberikan bayangan di bawah kotak */
+  z-index: 1000;        /* Menempatkan elemen di atas elemen lain */
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+}
+
+.profile-pic {
+  height: 50px;          /* Mengatur tinggi gambar profil */
+  width: 50px;           /* Mengatur lebar gambar profil */
+  border-radius: 50%;    /* Membuat gambar menjadi bulat */
+  float: left;           /* Mengatur gambar di sebelah kiri teks */
+  margin-right: 15px;    /* Memberikan jarak antara gambar dan teks */
+}
+
+.profile-info {
+  display: inline-block; /* Mengatur agar teks berada di sebelah kanan gambar */
+  vertical-align: middle; /* Menyelaraskan teks dengan tengah gambar */
+}
+
+.content {
+  margin-top: 60px; /* Sesuaikan dengan tinggi kotak profil */
+  padding: 20px;
+}
+
+#myBtn {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: #333; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+
+/* Main */
+main {
+  max-width: 1280px;
+}
+
+main .main_title {
+  margin-bottom: 36px;
+  text-align: center;
+}
+
+main .main_title span {
+  color: rgb(255, 255, 255);
+  font-size:  30px;
+}
+
+main ul {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+main ul li figure.card {
+  border: solid 1px rgb(63 63 70);
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+main ul li figure.card .card_header {
+  display: flex;
+  column-gap: 12px;
+  align-items: center;
+}
+
+main ul li figure.card .card_header .card_image {
+  width: 128px;
+  height: 128px;
+  overflow: hidden;
+  border-radius: 12px; /* bentuk gambar teman */
+}
+
+main ul li figure.card .card_header .card_image img {
+  margin-top: -12px;
+}
+
+main ul li figure.card .card_header .card_description {
+  font-weight: 600;
+}
+
+main ul li figure.card .card_header .card_description {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+main ul li figure.card .card_header .card_description span:last-child {
+  color: rgb(212 212 216);
+  font-family: monospace;
+}
+
+main ul li figure.card .card_content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin-top: 20px;
+}
+
+main ul li figure.card {
+  border: solid 1px rgb(94, 87, 87);
+  border-radius: 20px;
+  padding: 1rem;
+  box-shadow: 0px 4px 15px 4px rgb(8, 0, 255);
+
+}
+
+
+
+/* Footer */
+footer {
+  padding: 3rem 1rem;
+}
+
+footer section {
+  display: flex;
+  align-items: center;
+  column-gap: 1rem;
+  justify-content: center;
+}
+
+footer section img:first-child {
+  width: 3rem;
+}
+
+footer section img:last-child {
+  width: 2.5rem;
+}
+
+footer p {
+  text-align: center;
+  font-size: 14px;
+}
+
+
+/* Responsive Design */
+/* Tablet */
+@media screen and (min-width: 768px) {
+  /* Header */
+  header figure {
+    justify-content: space-between;
+  }
+
+  header figure img {
+    order: 2;
+    width: 12rem;
+  }
+  
+  header figure figcaption {
+    order: 1;
+  }
+
+  header figure figcaption span:first-child {
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+
+  header figure figcaption span:last-child {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+
+  /* Main */
+  main .main_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+  }
+
+  main .main_title h2 {
+    font-size: 32px;
+  }
+
+  main .main_title span {
+    font-size: 20px;
+  }
+
+  main ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  main ul li figure.card .card_header .card_description span:first-child {
+    font-size: 20px;
+  }
+}
+
+
+/* Laptop */
+@media screen and (min-width: 1024px) {
+  /* Header */
+  header figure img {
+    width: 14rem;
+  }
+
+
+  /* Main */
+  main ul {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
